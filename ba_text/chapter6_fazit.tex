@@ -1,0 +1,26 @@
+\chapter{Fazit}
+\section{Zusammenfassung}
+\paragraph{}
+Die Ergebnisse in Kapitel 5 zeigen, dass die Ziele für diese Arbeit zum Teil erfüllt wurden. Die Erkennung der Sprecheridentität funktioniert sehr gut und stellt damit für Menschen, welche ihre Stimme verloren haben, eine Möglichkeit dar ihre Identität per sEMG-Signal zu bestätigen.
+ 
+Die Ergebnisse für den Sprachmodus waren weniger gut. Sie zeigen jedoch, dass es möglich ist den Sprachmodus zu klassifizieren. Es deutet zudem an, dass die Erkennung von Unterschieden in der Sprachproduktion erkennbar ist. Die Erkennung des Sprachmodus müsste mit besseren Daten noch einmal getestet werden. Um zu kontrollieren, ob die niedrigere Genauigkeit an der Datenqualität liegt.
+
+\section{Zukünftige Arbeiten}
+In der Zukunft müsste man diese Versuche für den Sprachmodus nochmal mit besseren Daten durchführen. Zudem könnten neue Aufnahmen gemacht werden, in denen bestimmte Muskelgruppen fokussiert werden. Um zu gucken, ob es einen Unterschied in der Genauigkeit bei der Wahl verschiedener Muskelgruppen gibt.
+
+\paragraph{}
+Eine Möglichkeit zur Verbesserung, wäre es einen neuen Korpus aufzunehmen mit einem Array Aufnahmesetup anstatt Einzelelektroden. In (\cite{diener2020cslemgarray}) wird erklärt, dass das Wechseln auf ein Array Aufnahmesetup die Resultate verbessert. Beim Aufnähmen dieser Sessions sollte darauf geachtet werden, dass eine gleichmäßige Qualität zwischen den Sessions herrscht und die einzelnen Aufnahmen so hochwertig wie möglich sind.
+
+Eine weitere Idee für die Aufnahmen wäre es, die verschiedenen Sprachmodi nicht in derselben Session aufzunehmen, sondern es Blockweise zu tun. Indem man einzelne Blöcke zum Trainieren und andere zum Testen aufnimmt. Meine Hoffnung ist, dass durch das Aufnehmen in Blöcken eine bessere Datenqualität für die Trainingsdaten entsteht, weil die Sprecher nicht von Sprachmodus zu Sprachmodus wechseln müssen.
+
+Nach \cite{diener2020towards} sind gelernte Featuresets besser als selbstgemacht Featuresets. Es ist also eventuell eine höhere Erfolgsrate möglich, wenn man ein zusätzliches gelerntes Featureset für die Daten übernimmt. Das gelernte Featureset wurde hier mit dem AUDEEP toolkit gebaut. 
+
+Man könnte andere Klassifikatoren ausprobieren wie zum Beispiel AUDEEP in  \cite{diener2020towards}. Es sind auch andere Algorithmen möglich, wie die zuvor genannten phonetischen Entscheidungsbäume\cite{janke2011investigations}.
+
+In \cite{janke2010spectral} zeigten Janke et al., dass EMG-Signale von hörbarer Sprache im Allgemeinen eine höhere spektrale Leistung als EMG-Signale von stummer Sprache, aufweisen. Mit diesen Informationen konnte eine Abbildung vom stillen zum hörbaren/geflüsterten EMG erreicht werden, was zu 12,3 prozentiger Verbesserung führte. Demnach würde ich die selben Versuche nochmal mit der Abbildungen der Sprachmodi machen.
+
+\section{Abschließende Worte}
+Die Leistung von Schnittstellen für stumme Sprache, die auf der sEMG-Signal Klassifizierung basieren, wird mit der Zeit immer besser.
+Eine hohe Genauigkeit bei der Vorhersage des Sprachmodus würde zu einer höheren Qualität von Silent EMG to Speech Anwendungen führen. Die zusätzliche paralinguistische Information erlaubt es, solchen Anwendungen die Kadenz sowie die Lautstärke der Stimme eines Patienten besser nachmachen zu können.
+Ich hoffe, dass die Ergebnisse in dieser Arbeit dabei helfen, dem Ziel näher zu kommen,  stummen Menschen den Gebrauch von Sprachschnittstellen zu vereinfachen.
+

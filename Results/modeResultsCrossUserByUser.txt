@@ -1,0 +1,8 @@
+user1,46.67
+user2,33.73
+user3,42
+user4,46.33
+user5,58
+user6,66
+user7,60.07
+user8,39.62

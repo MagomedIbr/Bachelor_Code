@@ -1,0 +1,7 @@
+SVC/Poly, 98.40, 7.16
+DecisionTree, 88.23, 22.25
+LinearSVC, 98.06, 13.60
+KNN, 96.38, 14.64
+SVC/linear, 98, 13.603
+RandomForest,98.96, 2.79 
+LDA,97.72, 13.04

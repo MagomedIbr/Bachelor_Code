@@ -1,0 +1,182 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{PCMDG{\etalchar{+}}20}
+
+\bibitem[DAB{\etalchar{+}}ar]{diener2020towards}
+Lorenz Diener, Shahin Amiriparian, Catarina Botelho, Kevin Scheck, Dennis
+  Küster, Björn~W. Trancoso, Isabel~Schuller, and Tanja Schultz.
+\newblock Towards silent paralinguistics: Deriving speaking mode and speaker id
+  from electromyographic signals.
+\newblock In {\em {INTERSPEECH} 2020 - 21st Annual Conference of the
+  International Speech Communication Association}, 2020 (to appear).
+
+\bibitem[DCHM12]{6415781}
+Y.~{Deng}, G.~{Colby}, J.~T. {Heaton}, and G.~S. {Meltzner}.
+\newblock Signal processing advances for the mute semg-based silent speech
+  recognition system.
+\newblock In {\em MILCOM 2012 - 2012 IEEE Military Communications Conference},
+  pages 1--6, Oct 2012.
+
+\bibitem[DFGM15]{Docio-Fernandez2015}
+Laura Docio-Fernandez and Carmen Garc{\'i}a~Mateo.
+\newblock {\em Speech Production}, pages 1493--1498.
+\newblock Springer US, Boston, MA, 2015.
+
+\bibitem[DRVSar]{diener2020cslemgarray}
+Lorenz Diener, Mehrdad Roustay~Vishkasougheh, and Tanja Schultz.
+\newblock {CSL-EMG\_Array: An Open Access Corpus for EMG-to-Speech Conversion}.
+\newblock In {\em {INTERSPEECH} 2020 - 21st Annual Conference of the
+  International Speech Communication Association}, 2020 (to appear).
+
+\bibitem[Her16]{herff2016speech}
+Christian Herff.
+\newblock {\em Speech Processes for Brain-Computer Interfaces}.
+\newblock PhD thesis, University of Bremen, 2016.
+
+\bibitem[ISC]{ISCA2020-SP}
+Interspeech website
+  https://www.isca-speech.org/iscaweb/index.php/online-archive.
+
+\bibitem[Jan16]{janke2016emg}
+Matthias Janke.
+\newblock {\em EMG-to-Speech: Direct Generation of Speech from Facial
+  Electromyographic Signals}.
+\newblock PhD thesis, Karlsruher Institut für Technologie, 2016.
+
+\bibitem[JD17]{8114359}
+M.~{Janke} and L.~{Diener}.
+\newblock Emg-to-speech: Direct generation of speech from facial
+  electromyographic signals.
+\newblock {\em IEEE/ACM Transactions on Audio, Speech, and Language
+  Processing}, 25(12):2375--2385, 2017.
+
+\bibitem[JWS11]{janke2011investigations}
+Matthias Janke, Michael Wand, and Tanja Schultz.
+\newblock Investigations on speaking mode discrepancies in emg-based speech
+  recognition.
+\newblock In {\em 12th Annual Conference of the International Speech
+  Communication Association}, 2011.
+\newblock Interspeech 2011.
+
+\bibitem[ken]{kenhub}
+Bild über die muskeln im menschlichen gesicht aufgerufen am 17.9.2020(
+  aufgerufen am
+  https://www.kenhub.com/de/library/anatomie/die-mimische-muskulatur).
+
+\bibitem[Kon01]{KonEMG2001-ATO}
+Peter Konrad.
+\newblock Eine praxisorientierte einführung in die kinesiologische
+  elektromyographie.
+\newblock In {\em EMG-FIBEL}, 2001.
+\newblock EMG Fibel.
+
+\bibitem[Kon06]{KonEMG2006-ATO}
+Peter Konrad.
+\newblock A practical introduction to kinesiological electromyography.
+\newblock In {\em The ABC of EMG}, 2006.
+\newblock EMG book.
+
+\bibitem[Lee19]{AidenLee2019-GIT}
+Aiden Lee.
+\newblock Machine learning - emg project for prosthesis patients.
+\newblock
+  \url{https://gitlab.com/AidenLee94/machine-learning-emg-project-patients},
+  2019.
+
+\bibitem[PCMDG{\etalchar{+}}20]{article}
+José Pérez-Córdoba, Juan Martín-Doñas, Angel Gomez, Alejandro
+  Gomez-Alanis, and Jose Gonzalez~Lopez.
+\newblock Silent speech interfaces for speech restoration: A review.
+\newblock 09 2020.
+
+\bibitem[Phi12]{Phinyo2012-FT}
+Angkoon Phinyomark.
+\newblock Feature reduction and selection for emg signal classification.
+\newblock {\em Expert Systems with Applications}, 39(8):7420--7431, 2012.
+
+\bibitem[PVG{\etalchar{+}}11]{scikit-learn}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
+  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, J.~Vanderplas, A.~Passos,
+  D.~Cournapeau, M.~Brucher, M.~Perrot, and E.~Duchesnay.
+\newblock Scikit-learn: Machine learning in {P}ython.
+\newblock {\em Journal of Machine Learning Research}, 12:2825--2830, 2011.
+
+\bibitem[SAD{\etalchar{+}}19]{schultz_embc_2019}
+Tanja Schultz, Miguel Angrick, Lorenz Diener, Dennis Küster, Moritz Meier,
+  Dean Krusienski, Christian Herff, and Jonathan Brumberg.
+\newblock Towards restoration of articulatory movements: Functional electrical
+  stimulation of orofacial muscles.
+\newblock In {\em 2019 41st Annual International Conference of the IEEE
+  Engineering in Medicine and Biology Society (EMBC)}, pages 3111--3114, July
+  2019.
+
+\bibitem[Sch19]{Tanja_Interspeechkeynote_2019}
+Tanja Schultz.
+\newblock Biosignal processing for human-machine interaction. in: Keynote
+  presented at interspeech 2019, september 2019 graz, austria.
+\newblock 09 2019.
+
+\bibitem[Spe]{Spektrum}
+Bild über den aufbau von einem skelettmuskel aufgerufen am
+  17.9.2020(https://www.spektrum.de/lexika/images/bio).
+
+\bibitem[SSBD14]{ShwDav2014-ATO}
+Shai Shalev-Shwartz and Shai Ben-David.
+\newblock Understanding machine learning: From theory to algorithms.
+\newblock In {\em Understanding Machine Learning: From Theory to Algorithms},
+  2014.
+\newblock ML Book.
+
+\bibitem[Sta]{StatBund}
+$statistik der schwerbehinderten menschen 2019 (aufgerufen am 16.9.2020
+  https://www.destatis.de/de/themen/gesellschaft-umwelt/gesundheit/behinderte-menschen/_inhalt.html$\#sprg233848).
+
+\bibitem[SWH{\etalchar{+}}17]{8114358}
+T.~{Schultz}, M.~{Wand}, T.~{Hueber}, D.~J. {Krusienski}, C.~{Herff}, and J.~S.
+  {Brumberg}.
+\newblock Biosignal-based spoken communication: A survey.
+\newblock {\em IEEE/ACM Transactions on Audio, Speech, and Language
+  Processing}, 25(12):2257--2271, 2017.
+
+\bibitem[TM04]{MorSteMer2004-ATO}
+R.~Merletti T.~Moritani, D.~Stegeman.
+\newblock Basic physiology and biophysics of emg signal generation.
+\newblock In {\em ELECTROMYOGRAPHY Physiology, Engineering,and
+  NoninvasiveApplications}, 2004.
+\newblock EMG Book.
+
+\bibitem[Van16]{10.5555/3133359}
+Jake VanderPlas.
+\newblock {\em Python Data Science Handbook: Essential Tools for Working with
+  Data}.
+\newblock O'Reilly Media, Inc., 1st edition, 2016.
+
+\bibitem[vB01]{Avan2001-BOX}
+A.~van Boxtel.
+\newblock Optimal signal bandwidth for the recording of surface emg activity of
+  facial, jaw, oral, and neck muscles. psychophysiology.
+\newblock {\em Pubmeds}, 38:22--34, 2001.
+
+\bibitem[Wika]{Wikimedia-Common3}
+Bild der lda aufgerufen am 12.9.2020(
+  https://upload.wikimedia.org/wikipedia/de/a/a0/diskriminanzfunktion.png).
+
+\bibitem[Wikb]{Wikimedia-Common2}
+Bild einer datensatzes nach einer anpassung von einem knn aufgerufen am
+  12.9.2020(https://commons.wikimedia.org/wiki/file:data3classes.png).
+
+\bibitem[Wikc]{Wikimedia-Common}
+Datensatz für knn aufgerufen am
+  12.9.2020(https://commons.wikimedia.org/wiki/file:map1nn.png).
+
+\bibitem[Wikd]{Wikimedia-Common4}
+Positionen des pharynx und larynx aufgerufen am
+  17.9.2020($https://commons.wikimedia.org/wiki/file=throat_diagram.png$.
+
+\bibitem[WJS14]{WaJaSch2014-IS}
+Michael Wand, Matthias Janke, and Tanja Schultz.
+\newblock The emg-uka corpus for electromyographic speech processing.
+\newblock In {\em The 15th Annual Conference of the International Speech
+  Communication Association, Singapore}, 2014.
+\newblock Interspeech 2014.
+
+\end{thebibliography}

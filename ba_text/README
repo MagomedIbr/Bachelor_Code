@@ -1,0 +1,15 @@
+Dies ist die Vorlage für Abschlussarbeiten am Cognitive Systems Lab (CSL) der Universität Bremen.
+
+Wurzeldokument ist "thesis.tex".
+Die einzelnen Kapitel der Arbeit werden in eigene Dateien geschrieben und in dem Wurzeldokument importiert.
+Der Abstract ist in "abstract.bib".
+Die Bibliographie ist in "thesis.bib".
+
+In "thesis.tex" müssen angepasst werden:
+* die Metainformationen
+  myname, mytitle, mythesis, advisor, advisortwo, timestart, timeend, pdfsubject, pdfkeywords
+* die Sprache
+  selectlanguage
+
+
+Das Dokument kann mit make compiliert werden.

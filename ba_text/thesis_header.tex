@@ -1,0 +1,59 @@
+% Annotation macros
+\newcommand\todo[1]{\textcolor{red}{\textbf{TODO: #1}}}
+\newcommand\annot[1]{\marginnote{\small{\textcolor{blue}{#1}}}}
+
+
+
+% Dummy figure macro
+\newcommand{\dummyfig}[1]{
+  \centering
+  \fbox{
+    \begin{minipage}[c][0.15\textheight][c]{0.5\textwidth}
+      \centering{\todo{#1}}
+    \end{minipage}
+  }
+}
+
+% for title page layout
+\usepackage{eso-pic}
+\usepackage{helvet}
+\usepackage{epstopdf}
+
+\usepackage{lipsum}
+
+% inkscape pdf+latex inclusion from figure directory
+% Sometimes page groups are included in these PDFs. Usually this is harmless.
+\newcommand{\includepdf}[2][\linewidth]{\resizebox{#1}{!}{
+  \input{figures/#2.pdf_tex}}}
+
+% Print URLs not in Typewriter Font
+\def\UrlFont{\rm}
+
+\newcommand{\blankpage}{ % No numbers on blank pages
+ \clearpage{\pagestyle{empty}\cleardoublepage}
+}
+
+
+
+% Hyphenation setup
+\hyphenation{
+% Pro-to-koll-in-stan-zen
+% Ma-na-ge-ment  Netz-werk-ele-men-ten
+% Netz-werk Netz-werk-re-ser-vie-rung
+% Netz-werk-adap-ter Fein-ju-stier-ung
+% Da-ten-strom-spe-zi-fi-ka-tion Pa-ket-rumpf
+% Kon-troll-in-stanz
+}
+
+% We do want an index
+\makeindex
+
+% Graphics stored here
+\graphicspath{{figures/}}
+
+% Mathematics operators
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+% Abberviation macros
+\newcommand*{\eg}{e.g.\@\xspace}
+\newcommand*{\ie}{i.e.\@\xspace}

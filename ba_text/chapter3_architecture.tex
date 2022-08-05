@@ -1,0 +1,23 @@
+\chapter{Versuchsaufbau}
+\section{Aufteilung der Daten}
+Die Daten der Sprecher mit weniger als 2 Sessions werden in dieser Arbeit nicht verwendet. Demnach werden die Daten der Sprecher 1,2,4,7 und 8 verwendet. In den Versuchen zu dem Sprachmodus werden alle Sessions die nur audible Dateien enthalten entfernt.
+
+\subsection{Nutzererkennung}
+Für die Nutzererkennung werden alle Sessions außer einer genutzt, um den Klassifikator zu trainieren. Danach wird der trainierte Klassifikator auf der letzten Session getestet.
+Aus den Ergebnissen wird die durchschnittliche Genauigkeit der trainierten Klassifikatoren, sowie die Standardabweichung zwischen den Genauigkeiten der Klassifikatoren angeguckt. Zudem werden die Versuche mit den zwei größten Sessions und keiner anderen Session wiederholt.
+Zum Beispiel habe ich die Daten aller Sessions außer der ersten Session von Nutzer 1 verwendet und habe damit den Klassifikator trainiert. Dann habe ich den Klassifikator mit den Daten von der ersten Session von Nutzer 1 getestet.
+\paragraph{}
+Dies wird mit mehreren Klassifikatoren durchgeführt und die Resultate werden miteinander verglichen. Die verwendeten Klassifikatoren sind in Kapitel 2.6 zu sehen. Für den SVC Klassifikator werden die Kernel Linear,Poly,Gaussian und Sigmoid verwendet.
+In Kapitel 4 ist die durchschnittliche Genauigkeit der Erkennung für jeden Klassifikator zu sehen. Dazu sind in Kapitel 4 noch Resultate der einzelnen Sessions zu sehen. Es wird zudem versucht durch das entfernen von Daten ein besseres Ergebnis zu erreichen. Am Ende wird eine Confusion Matrix Analyse für einzelne Sessions sowie für die Daten an sich durchgeführt.
+Diese Versuche werden je einmal mit den ungefilterten Daten und einmal mit den gefilterten Daten durchgeführt. Es wurde ein Bandpassfilter mit Grenzfrequenzen von 10 Hz und 200 Hz verwendet um die Daten zu Filtern.
+\clearpage
+
+\subsection{Sprachmodus}
+Für die Erkennung des Sprachmodus sind die Daten in zwei verschiedene Weisen aufgeteilt.
+Es wird ein Klassifikatoren auf den Daten von allen außer einem Nutzer trainiert und danach auf dem letzten Nutzer getestet(Cross-User).
+Bei der anderen Variante werden für jeden Nutzer alle Sessions außer einer genutzt, um den Klassifikator zu trainieren und danach wird der Klassifikator auf der letzten Session  getestet(Cross-Session). 
+Bei beiden Varianten wird am Ende die durchschnittliche Genauigkeit der trainierten Klassifikatoren sowie die Standardabweichung zwischen den Genauigkeiten der Klassifikatoren angeguckt. Diese Versuche werden je einmal mit den ungefilterten Daten und einmal mit gefilterten Daten durchgeführt. Für die gefilterten Daten wurde ein Bandpassfilter mit Grenzfrequenzen von 10 Hz und 200 Hz verwendet. 
+
+\paragraph{}
+Dies wird mit mehreren Klassifikatoren durchgeführt und die Resultate miteinander verglichen. Für die Cross-Session Versuche werden die Genauigkeiten der einzelnen Sessions ebenfalls angegeben.
+Zudem habe ich alle Sessions herausgefiltert die nur den Sprachmodus \textit{hörbar} beinhalten.  Am Ende wird das Signal in verschiedene Frequenzbänder geteilt und die Experimente nochmal durchgeführt um zu sehen, ob es einen bestimmten Muskel gibt der mit einer besseren Genauigkeit vorhersagen kann als die anderen Muskeln. Hierfür wird ein LDA verwendet.

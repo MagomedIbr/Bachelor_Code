@@ -1,0 +1,50 @@
+\chapter{Diskussion}
+\section{Erkennung der Identität}
+\subsection{Klassifikator}
+Während dieser Arbeit wurden verschiedene Klassifikatoren eingesetzt. Diese Klassifikatoren lassen sich generell in 2 Gruppen einteilen. Die erste Gruppe sind die Klassifikatoren die zu brauchbaren Resultaten im Bezug auf die Genauigkeit der Vorhersagen geführt haben. Mit brauchbar sind hier Resultate von über 80 Prozent gemeint. Zu dieser Gruppe gehören LDA,RandmForest,KNN,DecisionTree sowie die SVC Klassifikatoren mit dem Kernel Poly und linear. Von diesen Klassifikatoren hat sich der LDA Klassifikator als der beste in den meisten Versuchen herausgestellt. Der RandomForest Klassifikator war für den Versuch am besten in dem nur 2 Nutzer miteinander verglichen wurden. Für alle anderen Versuche hat der LDA-Klassifikator jedoch ein besseres Resultat in der Durchschnittsgenauigkeit und der Standartabweichung geliefert.
+In die Zweite Gruppe gehören jene Klassifikatoren, welche zu Resultaten geführt haben, die am Zufallswert oder darunter liegen. Zu dieser zweiten Gruppe gehören die SVC Klassifikatoren mit den Kerneln Gaussian und Sigmoid sowie der NaiveBayes Klassifikator.
+
+\subsection{Große Sessions}
+Die Resultate für die einzelnen Sessions sind in (\ref{tab:UnfSessions}) für die ungefilterten Resultate und in (\ref{tab:FilteredSessions}) für die Resultate mit den gefilterten Daten zu sehen.
+\subparagraph{Sprecher 2}
+Mit den vorliegenden Daten konnte die Sprecheridentität mit einer Genauigkeit von 100 Prozent für die meisten Sessions erkannt werden. Für die Sprecher mit vielen Sessions wurde eine so ziemlich hundertprozentige Genauigkeit erreicht. Die eine Ausnahme war Session 29, in der die Sprecheridentität nur mit einer Genauigkeit von 27 Prozent erreicht werden konnte. Da diese Genauigkeit bei der gefilterten sowie bei der ungefilterten Methode gleich niedrig war, gehe ich davon aus, dass es bei der Aufnahme dieser Session zu einem Fehler gekommen ist. Dieser Fehler hat dazu gesorgt, dass die Identität von Sprecher 2 sehr oft mit Sprecher 8 verwechselt wurde. Diese Verwechslungsrate steigt sogar noch weiter an, wenn man nur die Sessions der Sprecher 2 und 8 nutzt.
+Session 29 und 26 von Sprecher 2 haben ebenfalls eine niedrigere Genauigkeit. Diese Genauigkeit konnte jedoch bei den Versuchen mit den gefilterten Daten stark erhöht werden, weshalb ich darauf schließe, dass die Ungenauigkeit in Session 26 an der Qualität von Session 29 hängt.
+
+\subparagraph{Sprecher 8}
+Bei Sprecher 8 konnten ebenfalls hohe Genauigkeiten für alle Sessions beobachtet werden. Der Unterschied zu Sprecher 2 ist jedoch, dass es keine Session mit einer sehr niedrigen Genauigkeit gibt. Dadurch die Durchschnittsgenauigkeit herunterzieht.
+
+\subsection{Kleine Sessions}
+\subparagraph{Sprecher 1}
+In Sprecher 1 konnte ein Abstieg der Genauigkeit vor und nach dem Filtern observiert werden. Ich gehe davon aus, dass die Aufnahmebedingungen dieser 3 Sessions zu einer erhöhten Einzigartigkeit der Daten, im Vergleich zu den anderen, geführt haben.
+Für Sprecher 1 konnten auch bei den gefilterten Daten einer Durchschnittsgenauigkeit von über 80 Prozent erzielt werden.
+
+\subparagraph{Sprecher 4}
+Für Session 1 kann man ebenfalls einen Abstieg der Genauigkeit vor und nach dem Filtern  beobachten. Ich gehe hier wie in Sprecher 1 davon aus das die Aufnahmebedingungen dieser 3 Sessions zu einer erhöhten Einzigartigkeit der Daten geführt hat. Eine weitere erwähnenswerte Beobachtung ist die Steigung der Genauigkeit von Session 1 Sprecher 4 um 12 Prozent nach dem Entfernen von Session 29 von Sprecher 2. Der Grund dafür ist, dass Sprecher 2 weniger oft geraten wird (\ref{fig:cnf9}). Ich gehe davon aus das der Grund für die Entwicklung ist, dass durch das Entfernen von Session 29 die Daten von Sprecher 2 uniformer werden und es dadurch zu weniger Möglichkeiten kommt in denen Sprecher 2 mit Sprecher 4 vertauscht werden kann.
+Session 2 in Sprecher 4 hat in jedem Versuch eine Genauigkeit von 0 Prozent. Session 2 hat zwar eine Genauigkeit von 0 Prozent, wenn man Session 1 zum Trainieren benutzt jedoch führt das Training mit Session 2 dazu das Session 1 eine sehr hohe Genauigkeit aufweist.
+
+\subparagraph{Sprecher 7}
+In Sprecher 7 ist die Genauigkeit nach dem Filtern weit höher als vor dem Filtern. Im Durchschnit steigt die Genauigkeit von 0 auf über 35 Prozent. Da die Wahrscheinlichkeit bei 0 liegt, gehe ich davon aus, dass beim Aufnehmen der EMG-Signale Artefakte im 200-300Hz oder 0-10Hz Bereich mitaufgenommen werden. Welche dazu geführt haben, dass die Daten ohne gefiltert zu werden, unbrauchbar sind. Man müsste hier eventuell einen schmaleren Filtern einsetzen.
+\clearpage
+
+\section{Sprachmodus}
+\subsection{Cross-User}
+Bei den Cross-User Versuchen konnten leider keine guten Resultate für die Funktionsfähigkeit der Sprachmodus Erkennung festgestellt werden. Es wurde zwar eine Durchschnittsgenauigkeit von 50 Prozent mit einem LDA erreicht. Beim näheren Betrachten der Daten stellt sich nämlich heraus, das es quasi zufallsbedingt ist. Es gibt einige einzelne vielversprechende Resultate wie zum Beispiel Sprecher 3 (\ref{fig:cnf10} / \ref{fig:cnf12}) mit den silent und whisper Werten. Sowie Sprecher 5 (\ref{fig:cnf11} / \ref{fig:cnf13}) mit den audible und silent Werten. Sonst wird eine der Sprachmodi am meisten Klassifiziert. Dies führt dazu, dass die Genauigkeit nahe 33 Prozent liegt, dass scheint vor allem die Sprecher mit mehr als 2 Sessions zu betreffen. Es fällt auf das sich bei dem Sprecher 3 sowie bei Sprechern 5–8 eine über 90 Prozent Genauigkeit für den silent Sprachmodus erkennen lässt, wobei Sprecher 8 in allen Bereichen silent klassifiziert hat. Zudem haben Sprecher 1,3 und 4 eine über 90 Prozent Genauigkeit für den whisper Sprachmodus. Es scheint als die Sprecher 1,3 und 4 beim Flüstern fundamental andere Daten erzeugt haben ,als die anderen Sprecher. Andersherum scheint es so als waren Sprecher 3 und 5–8 beim Aufnehmen der Daten \textit{anders} stumm waren als der Rest der Sprecher. 
+
+\paragraph{}
+Ich vermute die schlechten Ergebnisse liegen an den Unterschieden in den Aufnahmebedingungen zwischen den verschiedenen Sessions und an der niedrigen Qualität der EMG Aufnahmen. Diese 2 Punkte führen dazu, dass beim Nutzen der Daten aller Sprecher keine qualitativ hochwertige Bestimmung eines Sprachmodus möglich ist. Die genannten Beispielen, bei denen es einigermaßen gut Funktioniert hat, sind wahrscheinlich pures Glück. Um diesen Versuch besser durchführen zu können, hätte man von der Aufnahme an mehr auf die Uniformität der Aufnahmebedingungen achten sollen.
+Ich glaube nicht, dass man hieraus einen Schluss für die Machbarkeit einer Cross-User Erkennung ziehen kann.
+
+\subsection{Cross-Session}
+Bei den Cross-Session Versuchen sind teilweise viel bessere Resultate zu sehen als bei der Cross-User Variante. Mit 86 Prozent Genauigkeit ist Session 2 von Sprecher 1 ein sehr gutes Ergebnis. Diese Ergebnisse sinken um einiges nach dem Filtern. Sprecher 1 hat zudem die höchste Durchschnittsgenauigkeit, obwohl dieser nur aus 3 Sessions besteht. Ich gehe daher davon aus, dass die Menge der Daten nicht der wichtigste Punkt für die Erkennung des Sprachmodus ist. Eine kleine Anzahl hochwertiger Daten scheint besser geeignet zu sein als eine große Anzahl mittelwertiger Daten. Das Session-abhängige Training liefert für einige Sessions sehr gute Resultate, für manche andere, wie Session 13 von Sprecher 2 ist es trotzdem sehr gering. Der Grund für diese große Diskrepanz liegt hier wahrscheinlich wieder an den verschiedenen Aufnahmebedingungen zwischen verschiedenen Sessions. Ich nehme an, dass bei einer gleichmäßig hohen Qualität und bei normalisierten Aufnahmebedingungen die Resultate für jede Sessions in den Cross-Session Experimenten über 80 Prozent erreichen könnten.
+
+\subsection{Frequenzband}
+Durch die Aufteilung des Signals in verschiedene Frequenzbänder konnte leider kein Frequenzbereich erkannt werden, welcher eine höhere Genauigkeit für die Erkennung des Sprachmodus bietet. 
+
+Siehe\ref{fig:mode3} für die Cross-Session Resultate und \ref{fig:mode6} für die Cross-User Resultate.
+
+\section{Datenqualität}
+Durch das Entfernen von Session 29 konnte in der Sprechererkennung insgesamt eine bessere Genauigkeit erreicht werden wobei manche Sessions eine schlechtere Genauigkeit gezeigt haben \ref{tab:FilteredSessionsNo29}. 
+Die Probleme, welche durch die Qualität der Dateien entstehen, könnten vielleicht gelöst werden indem beim Aufnähmen dieser Sessions darauf geachtet wird dass eine gleichmäßige Qualität zwischen den Sessions herrscht und die einzelnen Aufnahmen so hochwertig wie möglich sind. Hier müsste man zum Beispiel darauf achten das kein Kanal Kaputt ist.
+
+\paragraph{Aufnahmetechnologie}
+Eine Möglichkeit zur Verbesserung wäre es, einen neuen Korpus aufzunehmen mit einem Array Aufnahmesetup anstelle von Einzelelektroden. Dies sorgt nach (\cite{diener2020cslemgarray}) nämlich für bessere Resultate. 

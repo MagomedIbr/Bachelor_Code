@@ -1,0 +1,5 @@
+LDA, 50.04, 11.15
+KNN, 40.24, 7.56
+DecisionTree, 43.64, 8.51
+RandomForest, 49.85, 10.04
+LinearSVC,48.91,9.23

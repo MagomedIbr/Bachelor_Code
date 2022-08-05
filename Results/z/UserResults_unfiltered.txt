@@ -1,0 +1,10 @@
+NaiveBayes, 34.75, 40.61
+SVC/Sigmoid, 55, 49.75
+SVC/Gaussian, 55, 49.75
+SVC/Poly, 92.37, 22.96
+DecisionTree, 88.23, 22.25
+LinearSVC, 92.43, 22.84
+KNN, 91.46, 23.87
+SVC/linear, 92.5, 22.97
+RandomForest,92.49, 22.01
+LDA,93.17, 10.69
